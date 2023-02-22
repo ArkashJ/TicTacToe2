@@ -22,7 +22,7 @@ public class TicTacToeGame extends GameAbstract{
 
     @Override
     public boolean playAgain(){
-        System.out.println("Play Again? (True/False): ");
+        System.out.println("Play Again? (Y/N): ");
         Scanner scanner = new Scanner(System.in);
         String decision = scanner.nextLine();
         if (!decision.toUpperCase().equals("Y"))

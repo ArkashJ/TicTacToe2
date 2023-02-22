@@ -20,8 +20,12 @@ public abstract class GameBoard implements IBoard{
     @Override
     public void printBoard(){
         for (int i = 0; i < board.length-1; i++){
-            for (int j = 0; j < board[0].length-1; j++){
-                System.out.print("| " + board[i][j] + " ");
+            for (int j = 0; j < board[0].length-1; j++) {
+                if (board[i][j].equals(Cell.Blank)) {
+                    System.out.print("| " + "  ");
+                } else {
+                    System.out.print(board[i][j]);
+                }
             }
             System.out.println("| ");
             for (int j = 0; j < COLS; j++){

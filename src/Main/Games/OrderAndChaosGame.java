@@ -21,7 +21,7 @@ public class OrderAndChaosGame extends GameAbstract{
 
     @Override
     public boolean playAgain(){
-        System.out.println("Play Again? (True/False): ");
+        System.out.println("Play Again? (Y/N): ");
         Scanner newScanner = new Scanner(System.in);
         String decision = newScanner.nextLine();
         if (!decision.toUpperCase().equals("Y"))
@@ -43,6 +43,7 @@ public class OrderAndChaosGame extends GameAbstract{
             int row = Integer.parseInt(scanner.nextLine());
 
             if (row > board.rowLength()){
+                System.out.println("Enter another row");
                 row = Integer.parseInt(scanner.nextLine());
             }
 
@@ -50,6 +51,7 @@ public class OrderAndChaosGame extends GameAbstract{
             int col = Integer.parseInt(scanner.nextLine());
 
             if (col > board.colLength()){
+                System.out.println("Enter another col");
                 col = Integer.parseInt(scanner.nextLine());
             }
 

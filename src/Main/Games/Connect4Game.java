@@ -43,6 +43,7 @@ public class Connect4Game extends GameAbstract{
             int col = Integer.parseInt(scanner.nextLine());
             
             if (col > board.rowLength()){
+                System.out.println("Enter another column.");
                 col = Integer.parseInt(scanner.nextLine());
             }
 
