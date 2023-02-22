@@ -5,7 +5,7 @@ import java.util.Scanner;
 import Main.Board.IBoard;
 import Main.Players.Player;
 
-public class TicTacToeGame extends GameAbstract{
+public class TicTacToeGame extends TurnBasedBoardGame{
     public TicTacToeGame(Player player1, Player player2, IBoard board){
         super(player1, player2, board);
     }

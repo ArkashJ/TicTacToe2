@@ -3,7 +3,7 @@ import java.util.*;
 import Main.Board.IBoard;
 import Main.Players.Player;
 
-public class Connect4Game extends GameAbstract{
+public class Connect4Game extends TurnBasedBoardGame{
     public Connect4Game(Player player1, Player player2, IBoard board){
         super(player1, player2, board);
     }

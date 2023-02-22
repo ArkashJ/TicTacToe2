@@ -4,7 +4,7 @@ import Main.Board.IBoard;
 import Main.Cell.Cell;
 import Main.Players.Player;
 
-public class OrderAndChaosGame extends GameAbstract{
+public class OrderAndChaosGame extends TurnBasedBoardGame{
     public OrderAndChaosGame(Player player1, Player player2, IBoard board){
         super(player1, player2, board);
     }
