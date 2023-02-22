@@ -56,7 +56,7 @@ Player implements the IPlayer
     public abstract void end();
     public abstract String play();
     public abstract boolean playAgain();
-|> GameAbstract - extends Game and implements ITurnGame: Initialize the constructors and interface methods
+|> TurnBasedBoardGame - extends Game and implements ITurnGame: Initialize the constructors and interface methods
 
     This class is extended by
     |> OrderAndChaosGame - Conditions to play the order and chaos game
@@ -163,7 +163,7 @@ Enter row:
 0
 Enter column:
 2
-Enter your cell value (X or O):
+Enter your cell value (X or O):s
 X
 | X | X | X | Blank | Blank | Blank | 
 ---  ---  ---  ---  ---  ---  
@@ -203,6 +203,7 @@ Heres the score tally:
 Test: 1
 Play Again? (Y/N): 
 Y
+---------------------------------------------------------
 Which game would you like to play? Here's your options: 
 A) TicTacToe B) OrderAndChaos C) Connect4
 Choose the one you want to play by typing in the game name, the case doesn't matter
@@ -342,7 +343,7 @@ Test: 1
 Arkash: 1
 Play Again? (Y/N): 
 Y
-Y
+---------------------------------------------------------
 Which game would you like to play? Here's your options: 
 A) TicTacToe B) OrderAndChaos C) Connect4
 Choose the one you want to play by typing in the game name, the case doesn't matter
@@ -504,3 +505,5 @@ Arkash: 1
 NewUser: 1
 Play Again? (Y/N): 
 N
+-------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
