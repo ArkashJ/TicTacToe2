@@ -42,7 +42,7 @@ public class Connect4Game extends TurnBasedBoardGame{
             System.out.println("Enter column : ");
             int col = Integer.parseInt(scanner.nextLine());
             
-            if (col > board.rowLength()){
+            if (col >= board.rowLength()){
                 System.out.println("Enter another column.");
                 col = Integer.parseInt(scanner.nextLine());
             }

@@ -42,7 +42,7 @@ public class OrderAndChaosGame extends TurnBasedBoardGame{
             System.out.println("Enter row:");
             int row = Integer.parseInt(scanner.nextLine());
 
-            if (row > board.rowLength()){
+            if (row >= board.rowLength()){
                 System.out.println("Enter another row");
                 row = Integer.parseInt(scanner.nextLine());
             }
@@ -50,7 +50,7 @@ public class OrderAndChaosGame extends TurnBasedBoardGame{
             System.out.println("Enter column:");
             int col = Integer.parseInt(scanner.nextLine());
 
-            if (col > board.colLength()){
+            if (col >= board.colLength()){
                 System.out.println("Enter another col");
                 col = Integer.parseInt(scanner.nextLine());
             }

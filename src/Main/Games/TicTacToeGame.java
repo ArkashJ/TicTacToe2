@@ -46,14 +46,14 @@ public class TicTacToeGame extends TurnBasedBoardGame{
             System.out.println("Enter row : ");
             int row = Integer.parseInt(scanner.nextLine());
 
-            if (row > board.rowLength()){
+            if (row >= board.rowLength()){
                 row = Integer.parseInt(scanner.nextLine());
             }
 
             System.out.println("Enter column : ");
             int col = Integer.parseInt(scanner.nextLine());
             
-            if (col > board.colLength()){
+            if (col >= board.colLength()){
                 col = Integer.parseInt(scanner.nextLine());
             }
 
