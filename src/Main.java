@@ -26,12 +26,15 @@ public class Main {
             System.out.println("Choose the one you want to play by typing in the game name, the case doesn't matter");
             String gameChoice = scanner.nextLine();
 
-            System.out.println("Enter your name Player1");
+            System.out.println("Enter your name Player1: ");
             String name1 = scanner.nextLine();
-            System.out.println("Player1, choose your cell element - X or O (you can use the same for all 3 games)");
+            System.out.println("Player2 - Enter your name: ");
+            String name2 = scanner.nextLine();
+
+            System.out.println("Player1, choose your cell element - X or O (you can use the same for all 3 games): ");
             // loop until the user selects the current choice
             while (p1Cell == null){
-                System.out.println("Enter your choice");
+                System.out.println("Enter your choice: ");
                 String p1CellVal = scanner.nextLine();
 
                 if(p1CellVal.equalsIgnoreCase("X")){
@@ -39,14 +42,13 @@ public class Main {
                 }  else if (p1CellVal.equalsIgnoreCase("O")){
                     p1Cell = Cell.O;
                 }   else{
-                    System.out.println("Invalid value, choose again");
+                    System.out.println("Invalid value, choose again ");
                 }
             }
             //set player1 by calling the player class from Main/Player
             Player player1 = new Player(name1, p1Cell);
             //Set the variable for player2 and ask them for their name
-            System.out.println("Player2 - Enter your name");
-            String name2 = scanner.nextLine();
+            
 
             if (p1Cell == Cell.X)
                 p2Cell = Cell.O;
@@ -111,8 +113,6 @@ public class Main {
                 System.out.println(winner);
                 System.out.println("Heres the score tally: ");
                 wins.printHashMap();
-                scanner.close();
-                
                 playAgain = game.playAgain();
             }
         } 

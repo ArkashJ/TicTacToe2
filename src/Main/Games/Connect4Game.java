@@ -10,23 +10,20 @@ public class Connect4Game extends GameAbstract{
 
     @Override
     public void end(){
-        System.out.println("Ending the Connect4 Game");
+        System.out.println("Ending the Connect4 Game" );
     }
 
     @Override
     public void start(){
-        System.out.println("Starting the Connect4 Game");
+        System.out.println("Starting the Connect4 Game ");
     }
 
     @Override
     public boolean playAgain() {
-        System.out.println("Play Again? (True/False): ");
+        System.out.println("Play Again? (Y/N): ");
         Scanner scanner = new Scanner(System.in);
-        scanner.nextLine();
-        scanner.nextLine();
         String decision = scanner.nextLine();
         System.out.println(decision);
-        scanner.close();
         if (!decision.toUpperCase().equals("Y"))
             return false;
         return true;
@@ -66,7 +63,7 @@ public class Connect4Game extends GameAbstract{
     
             nextMove();
         }
-        scanner.close();
+        end();
         return winner;
     }
     

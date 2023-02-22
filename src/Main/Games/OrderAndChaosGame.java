@@ -81,8 +81,7 @@ public class OrderAndChaosGame extends GameAbstract{
     
             nextMove();
         }
-    
-        scanner.close();
+        end();
         return winner;
     }
 }

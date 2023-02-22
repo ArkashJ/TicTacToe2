@@ -75,7 +75,6 @@ public class TicTacToeGame extends GameAbstract{
             }
             nextMove();
         }
-        scanner.close();
         end();
         return winner;
         }
